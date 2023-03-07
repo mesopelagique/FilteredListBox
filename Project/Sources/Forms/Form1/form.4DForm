@@ -1,0 +1,168 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 0,
+					"top": 28,
+					"width": 266,
+					"height": 411,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.value.collection",
+					"method": "ObjectMethods/List Box.4dm",
+					"showFooters": false,
+					"showHeaders": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideExtraBlankRows": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"sizingX": "grow",
+					"resizingMode": "rightToLeft",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1",
+								"verticalPadding": 20
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"width": 266,
+							"dataSource": "This:C1470.name",
+							"fontFamily": "Kohinoor Gujarati Bold",
+							"fontSize": 18,
+							"verticalPadding": 2,
+							"horizontalPadding": 10,
+							"rowHeightAuto": false,
+							"resizable": true,
+							"enterable": false,
+							"events": [
+								"onLoad"
+							]
+						}
+					]
+				},
+				"ringMac": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 2,
+					"width": 266,
+					"height": 27,
+					"sizingX": "grow",
+					"borderRadius": 6,
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"inputMac": {
+					"type": "input",
+					"top": 6,
+					"left": 29,
+					"width": 210,
+					"height": 17,
+					"sizingX": "grow",
+					"class": "Default",
+					"hideFocusRing": true,
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					],
+					"dataSource": "Form:C1466.value.searchText",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"method": "ObjectMethods/inputMac.4dm"
+				},
+				"glass": {
+					"type": "button",
+					"top": 6,
+					"left": 5,
+					"width": 20,
+					"height": 20,
+					"class": "",
+					"focusable": false,
+					"icon": "/RESOURCES/images/searchPicker/Mac/glass.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"closeMac": {
+					"type": "button",
+					"top": 6,
+					"left": 245,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"class": "Default",
+					"icon": "/RESOURCES/images/searchPicker/Mac/close.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"visibility": "visible",
+					"method": "ObjectMethods/closeMac.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 88,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"memorizeGeometry": true
+}
