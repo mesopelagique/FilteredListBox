@@ -79,12 +79,13 @@
 							"fontSize": 18,
 							"verticalPadding": 2,
 							"horizontalPadding": 10,
-							"rowHeightAuto": false,
+							"rowHeightAuto": true,
 							"resizable": true,
 							"enterable": false,
 							"events": [
 								"onLoad"
-							]
+							],
+							"wordwrap": "normal"
 						}
 					]
 				},
